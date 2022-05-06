@@ -57,7 +57,7 @@ select CONCAT(f.primeiro_nome, ' ', f.nome_meio, ' ', f.ultimo_nome) as nome_com
 
 /* Questão 7 */
 select CONCAT(f.primeiro_nome, ' ', f.nome_meio, ' ', f.ultimo_nome) as nome_completo, salario, numero_departamento
-    from funcionario
+    from funcionario as f
     where not exists (
     select *
     from dependente
